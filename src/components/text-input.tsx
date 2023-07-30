@@ -1,5 +1,5 @@
-import 'server-only';
 import React from 'react';
+import 'server-only';
 
 export interface I_TEXT_INPUT
 {
@@ -11,6 +11,6 @@ export function TEXT_INPUT(props: I_TEXT_INPUT)
 {
     return <label>
         {props.label_text}
-        <input name={props.input_name}/>
+        <input name={props.input_name} className={'block'}/>
       </label>;
 }
